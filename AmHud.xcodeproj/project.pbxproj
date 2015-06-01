@@ -14,6 +14,9 @@
 		D56E40CD1B1C24680019ADF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D56E40CC1B1C24680019ADF5 /* Images.xcassets */; };
 		D56E40D01B1C24680019ADF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D56E40CE1B1C24680019ADF5 /* LaunchScreen.xib */; };
 		D56E40DC1B1C24680019ADF5 /* AmHudTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D56E40DB1B1C24680019ADF5 /* AmHudTests.m */; };
+		D56E40E81B1C24940019ADF5 /* AmHud.m in Sources */ = {isa = PBXBuildFile; fileRef = D56E40E71B1C24940019ADF5 /* AmHud.m */; };
+		D56E40EB1B1C25160019ADF5 /* AmHudView.m in Sources */ = {isa = PBXBuildFile; fileRef = D56E40EA1B1C25160019ADF5 /* AmHudView.m */; };
+		D56E40EE1B1C25EE0019ADF5 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D56E40ED1B1C25EE0019ADF5 /* UIView+frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		D56E40D51B1C24680019ADF5 /* AmHudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmHudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56E40DA1B1C24680019ADF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D56E40DB1B1C24680019ADF5 /* AmHudTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmHudTests.m; sourceTree = "<group>"; };
+		D56E40E61B1C24940019ADF5 /* AmHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmHud.h; sourceTree = "<group>"; };
+		D56E40E71B1C24940019ADF5 /* AmHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmHud.m; sourceTree = "<group>"; };
+		D56E40E91B1C25160019ADF5 /* AmHudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmHudView.h; sourceTree = "<group>"; };
+		D56E40EA1B1C25160019ADF5 /* AmHudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmHudView.m; sourceTree = "<group>"; };
+		D56E40EC1B1C25EE0019ADF5 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		D56E40ED1B1C25EE0019ADF5 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 		D56E40BE1B1C24680019ADF5 /* AmHud */ = {
 			isa = PBXGroup;
 			children = (
+				D56E40E51B1C246D0019ADF5 /* AmHud */,
 				D56E40C31B1C24680019ADF5 /* AppDelegate.h */,
 				D56E40C41B1C24680019ADF5 /* AppDelegate.m */,
 				D56E40C61B1C24680019ADF5 /* ViewController.h */,
@@ -117,6 +127,19 @@
 				D56E40DA1B1C24680019ADF5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D56E40E51B1C246D0019ADF5 /* AmHud */ = {
+			isa = PBXGroup;
+			children = (
+				D56E40EC1B1C25EE0019ADF5 /* UIView+frame.h */,
+				D56E40ED1B1C25EE0019ADF5 /* UIView+frame.m */,
+				D56E40E61B1C24940019ADF5 /* AmHud.h */,
+				D56E40E71B1C24940019ADF5 /* AmHud.m */,
+				D56E40E91B1C25160019ADF5 /* AmHudView.h */,
+				D56E40EA1B1C25160019ADF5 /* AmHudView.m */,
+			);
+			name = AmHud;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D56E40EE1B1C25EE0019ADF5 /* UIView+frame.m in Sources */,
 				D56E40C81B1C24680019ADF5 /* ViewController.m in Sources */,
+				D56E40E81B1C24940019ADF5 /* AmHud.m in Sources */,
+				D56E40EB1B1C25160019ADF5 /* AmHudView.m in Sources */,
 				D56E40C51B1C24680019ADF5 /* AppDelegate.m in Sources */,
 				D56E40C21B1C24680019ADF5 /* main.m in Sources */,
 			);
